@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery</title>
+    <style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(13, 12, 12, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1f2f4;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #f9f8f8;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar nav ul li a:hover {
+  color: #E78D0E;
+}
+.navbar nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #E78D0E;
+  transition: width 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">THE <br> ART</div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">EXHIBITION</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="#">VISIT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section class="flex justify-between items-center p-6 bg-gray-100">
+      <!-- Image Left -->
+      <div class="w-1/4">
+        <img
+          src="/image/image2.jpg"
+          alt="Left"
+          class="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+
+      <!-- Center Text -->
+      <div class="w-1/2 text-center px-4 gap-20">
+        <h2
+          class="text-2xl font-bold text-gray-800 border-b-2 border-white-500 pb-2 mb-4"
+        >
+          History
+        </h2>
+        <p class="text-gray-600">
+          George Groslier (1887–1945), historian, curator and author was the
+          motivating force behind much of the revival of interest in traditional
+          Cambodian arts and crafts, and it was he who designed this building
+          that is today ‘traditional Khmer’ architecture. It is perhaps better
+          described as a building enlarged from Cambodian temple prototypes seen
+          on ancient bas-reliefs and reinterpreted through colonial eyes to meet
+          the museum-size requirements. The foundation stone for the new museum
+          was laid on 15 August 1917. Some two-and-a-half years later, the
+          completed museum was inaugurated during Khmer New Year on 13 April
+          1920 in the presence of H.M King Sisowath, François-Marius Baudouin,
+          Résident-supérieur, and M. Groslier, director of Cambodian Arts, and
+          Conservator of the museum.The original design of the building was
+          slightly altered in 1924 with extensions that added wings at either
+          end of the eastern façade that made the building even more imposing.
+          Control of the National Museum and Arts Administration was ceded by
+          the French to the Cambodians on 9 August 1951 and following
+          Independence in 1953, the then Musée National de Phnom Penh was the
+          subject of bilateral accords. In 1966 Chea Thay Seng was the first
+          Cambodian director of the museum and dean of the newly created
+          Department of Archaeology at the Royal University of Fine Arts. This
+          university that form its foundation as the Ecole des Arts Cambodgiens
+          in 1920 was intimately linked with students, artisans and teachers who
+          worked to preserve Cambodian cultural traditions, can still be found
+          to the rear of the museum. During the Khmer Rouge regime (from 1975 to
+          1979), all aspects of Cambodian life including the cultural realm were
+          devastated. The museum, along with the rest of Phnom Penh, was
+          evacuated and abandoned. The museum, closed between 1975 and 1979, and
+          was found in disrepair, its roof rotten and home to a vast colony of
+          bats, the garden overgrown, and the collection in disarray, many
+          objects damaged or stolen. The museum was quickly tidied up and
+          reopened to the public on 13 April 1979. However, many of the museum's
+          employees had lost their lives during the Khmer Rouge regime.
+        </p>
+      </div>
+
+      <!-- Right Images (Stacked Top & Bottom) -->
+      <div class="w-1/4 flex flex-col space-y-4">
+        <img
+          src="/image/banner.jpg"
+          alt="Top Right"
+          class="w-full h-auto rounded-lg shadow"
+        />
+        <img
+          src="/image/image4.jpg"
+          alt="Bottom Right"
+          class="w-full h-auto rounded-lg shadow"
+        />
+      </div>
+    </section>
+    <section class="bg-gray-100 py-8 px-4">
+      <h2 class="text-2xl font-bold text-center text-black-700 mb-6">
+        Gallery
+      </h2>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+      >
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src="/image/card1.jpg"
+            alt="Artwork 1"
+            class="h-75 w-100 object-cover rounded"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Reclining Vishnu from West Mebon, Angkor. Made of Bronze, statue
+              is from 11th century
+            </h3>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src="/image/card2.jpg"
+            alt="Artwork 2"
+          class="w-full h-70 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Garuda in Koh Ker style. Made of sandstone, statue is from 10th
+              century (Angkor period)
+            </h3>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src="/image/card3.jpg"
+            alt="Artwork 3"
+            class="w-full h-75 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Trimurti from Angkor. Made of sandstone, statue dates back to 11th
+              century.
+            </h3>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src="/image/card4.jpg"
+            alt="Artwork 3"
+            class="w-full h-75 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Lingam from Angkor period. Discovered in Battambang Province and
+              is made of Bronze, Quartz & Silver.
+            </h3>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="/image/card5.jpg" alt="Artwork 3" class="w-full h-75 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Peacock shaped Paan dan. Made of Brass, the case dates to 17th or
+              18th century and belongs to Longvek in Cambodia.
+            </h3>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="/image/card6.jpg" alt="Artwork 3"class="w-full h-52 object-cover ">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Elephant bell made of bronze from the Angkor period.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-6 bg-white">
+      <!-- h2 with underline -->
+      <h2
+        class="text-2xl font-bold text-gray-800 border-b-2 border-black-500 pb-2 mb-4"
+      >
+        Repatriation of artifacts
+      </h2>
+
+      <!-- Paragraph below -->
+      <p class="text-gray-700 text-base">
+        In July 2024, 14 sculptures were repatriated to Cambodia from the U.S.
+        and were displayed at the museum. This was a welcome success for
+        Cambodia's efforts to bring back thousands of artifacts looted or
+        trafficked out of the country. Of those repatriated and put on display
+        at the museum, a stone sculpture from the 10th century of the female
+        goddess Uma from the ancient royal capital of Koh Ker, was highly
+        anticipated.
+      </p>
+    </section>
+  </body>
+</html>

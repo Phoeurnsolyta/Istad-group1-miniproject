@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(13, 12, 12, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1f2f4;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #f9f8f8;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar nav ul li a:hover {
+  color: #E78D0E;
+}
+.navbar nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #E78D0E;
+  transition: width 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">THE <br> ART</div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">EXHIBITION</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="#">VISIT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+    
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('/image/banner.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="text-center text-white px-4">
+          <!-- <img src="" alt="Logo" class="mx-auto mb-4 rounded-full shadow-lg"> -->
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            National Museum of Cambodia
+          </h1>
+          <p class="text-lg md:text-xl mb-6">
+            The National Museum of Cambodia (Khmer: សារមន្ទីរជាតិ) is Cambodia's
+            largest museum of cultural history and is the country's leading
+            historical and archaeological museum.
+          </p>
+
+          <!-- Clickable Button -->
+          <a
+            href="button.html"
+            class="inline-block bg-black-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+          >
+            See More
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Content under navbar -->
+
+    <section
+      class="flex flex-col md:flex-row items-center justify-between px-6 py-12 max-w-6xl mx-auto gap-20"
+    >
+      <!-- Text Side -->
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">
+          National Museum of Cambodia
+        </h2>
+        <p class="text-gray-600 text-lg">
+          The museum houses one of the world's largest collections of Khmer art,
+          including sculptural, Khmer ceramics, bronzes, and ethnographic
+          objects. Its collection includes over 14,000 items, from prehistoric
+          times to periods before, during and after the Khmer Empire, which at
+          its height stretched from Thailand, across present-day Cambodia, to
+          southern Vietnam. The National Museum of Cambodia is located on Street
+          10 in central Phnom Penh, to the north of the Royal Palace and on the
+          west side of Veal Preah Man square. The visitors' entrance to the
+          compound is at the corner of Streets 13 and 178. The Royal University
+          of Fine Arts is located on the west side of the museum. The museum is
+          under the authority of the Cambodian Ministry of Culture and Fine
+          Arts. The museum buildings, inspired by Khmer temple architecture,
+          were constructed between 1917 and 1924, the museum was officially
+          inaugurated in 1920, and it was renovated in 1968. The museum promotes
+          awareness, understanding and appreciation of Cambodia's culture and
+          heritage, aiming to educate and inspire its visitors.[2] History
+        </p>
+      </div>
+
+      <!-- Image Side -->
+      <div class="md:w-1/2">
+        <img
+          src="/image/navbar.jpg"
+          alt="Museum Display"
+          class="rounded-3xl shadow-lg"
+        />
+      </div>
+    </section>
+    <div class="grid grid-cols-3 gap-4">
+      <img
+        src="/image/image1.jpg"
+        alt="រូបភាព"
+        class="rounded-lg shadow-lg mb-2"
+      />
+      <img
+        src="/image/image3.jpg"
+        alt="រូបភាព"
+        class="rounded-lg shadow-lg mb-2"
+      />
+      <img
+        src="/image/image4.jpg"
+        alt="រូបភាព"
+        class="rounded-lg shadow-lg mb-​2"
+      />
+    </div>
+    <div class="text-center text-black px-4">
+      <p class="text-lg md:text-xl mb-6 ">
+        Together with the adjacent Royal University of Fine Arts and its
+        Department of Archaeology, the National Museum of Cambodia works to
+        enhance knowledge of and preserve Cambodian cultural traditions and to
+        provide a source of pride and identity to the Cambodian people. The
+        museum also serves a religious function; its collection of important
+        Buddhist and Hindu sculpture addresses community religious needs as a
+        place of worship. A permanent exhibition, Post-Angkorian Buddha,
+        supported by UNESCO and a number of individuals and local businesses,
+        opened in 2000 to extend the religious function of the museum. Under the
+        auspices of the Cambodian Department of Museums, the museum not only
+        manages its own collection, staff, and premises but also supports and
+        oversees all other state-run museums in Cambodia. Its activities are
+        further supported by private individuals, foreign governments, and
+        numerous philanthropic organizations. The activities of the museum
+        include the presentation, conservation, safekeeping, interpretation, and
+        acquisition of Cambodian cultural material, as well as the repatriation
+        of Cambodian cultural property. Looting and illicit export of Cambodian
+        cultural material are a continuing concern. Outside of Cambodia, the
+        museum promotes the understanding of Cambodian arts and culture by
+        lending objects from its collection for major international exhibitions.
+        This practice was in place before Cambodia's recent decades of unrest
+        and was reinstituted in the 1990s, starting with an exhibition held at
+        the National Gallery of Australia in 1992. Subsequent exhibitions have
+        been held in France, the United States, Japan, South Korea, and Germany.
+      </p>
+      </div>
+    
+  </body>
+</html>
