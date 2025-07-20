@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="sm:">
     <!-- Header / Navbar -->
   <header class="bg-black text-white">
     <div class="flex items-center justify-between mx-10 px-6 py-4">
@@ -24,7 +24,7 @@
         <a href="#" class="hover:text-gray-300">EXHIBITION</a>
         <a href="#" class="hover:text-gray-300">HISTORY</a>
         <a href="#" class="hover:text-gray-300">VISIT</a>
-        <a href="#" class="hover:text-gray-300">CONTACT</a>
+        <a href="#" class="hover:text-gray-300">SEARCH</a>
       </nav>
     </div>
   </header>
@@ -37,43 +37,117 @@
            <p class="text-2xl font-bold">Provincial Museum</p>
         </div>
     </div>
-    <div class="mx-8 mt-10 ">
+        <div class="mx-8 mt-10 ">
           <p class="text-2xl font-bold">Welcome to the Art’s Gallery</p>
           <p class="font-medium">Each piece reflects the creativity, history, and soul of its time.</p>
-         </div>
-         <div>
-           <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                <img  src="/images/card7.jpg" alt="Apsara dancers">
-                <p class="mt-3 text-lg font-medium">Apsara dancers</p>
-                <p class="text-sm text-gray-500">Ancient artwork</p>
-            </div>
-            <div class="w-full md:w-2/3">
-                <p class="text-gray-700 leading-relaxed">
-                    This painting captures the elegance and spirituality of the celestial Apsaras in Khmer mythology. With graceful movements and intricate costuming, it reflects the deep cultural roots of Cambodian classical dance and textile art, especially from Angkor Wat.
-                </p>
-            </div>
+        </div>
+         <div class="flex flex-col ">
+            <h2 class="text-2xl font-medium mx-8 mt-5">Paintings</h2>
+            <!-- card 1 -->
+           <div class="flex flex-col md:flex-row gap-6 items-start mt-8 mx-8">
+            <!-- Image -->
+              <img src="/images/card7.jpg" alt="Apsara dancers" class="w-[320px]" />
+
+            <!-- Text -->
+             <div class="max-w-xl">
+                <h3 class="font-bold text-lg mb-1">Apsara dancers</h3>
+                <p class="text-sm text-gray-500 mb-2">Through July 20</p>
+              <p class="text-gray-700">
+                  This painting captures the elegance and spirituality of the celestial Apsaras in Khmer mythology.
+                  With graceful movements and intricate costuming, it reflects the deep cultural roots of Cambodian
+                  classical dance and textile art, especially from Angkor Wat.
+             </p>
+             </div>
+          </div>
+            <!-- card 2 -->
+            <div class="flex flex-col md:flex-row gap-6 justify-end mt-8 mx-8">
+                <!-- Text -->
+             <div class="max-w-xl items-start">
+                <h3 class="font-bold text-lg mb-1">Hanuman Arts of Reamker</h3>
+                <p class="text-sm text-gray-500 mb-2">June 28-Ongoing</p>
+              <p class="text-gray-700">
+                  Hanuman, the white monkey general, is a central hero in the Reamker, Cambodia’s version of the Ramayana. Often shown in dynamic poses—leaping, fighting, or bowing in devotion—Hanuman represents bravery, loyalty, and divine wisdom. Khmer artists capture his spirit through detailed carvings, murals, and dance, making him one of the most beloved figures in classical Khmer art and mythology.
+             </p>
+             </div>
+            <!-- Image -->
+              <img src="/images/card1.jpg" alt="Apsara dancers" class="w-[320px] items-end" />
+
+          </div>
+          <h2 class="text-2xl font-medium mx-8 mt-5">Sculptures</h2>
+            <!-- card 3 -->
+            <div class=" md:flex-row gap-6 items-start mt-8 mx-8">
+            <!-- Image -->
+              <img src="/images/card13.jpg" alt="Apsara dancers" class="w-[320px]" />
+
+            <!-- Text -->
+             <div class="max-w-xl ">
+                <h3 class="font-bold text-lg mb-1">Sleeping Vishnu: Musée Guimet’s Paris, France</h3>
+                <p class="text-sm text-gray-500 mb-2">July 17, 2025–May 31, 2026</p>
+              <p class="text-gray-700 text-wrap">
+                  This sculpture depicts the Hindu god Vishnu in a reclining pose on the cosmic serpent Ananta. A symbol of cosmic balance and the eternal cycle of creation, this image is a spiritual cornerstone in Khmer temple art, reflecting deep Hindu-Buddhist fusion in Khmer belief.
+             </p>
+             </div>
+          </div>
+          <!-- card 4 -->
+           <div class=" grid grid-cols-1 gap-6 items-start mt-8 mx-8">
+            <!-- Image -->
+              <img src="/images/card10.webp" alt="Apsara dancers" class="w-[320px]" />
+
+            <!-- Text -->
+             <div class="max-w-xl ">
+                <h3 class="font-bold text-lg mb-1">King Jayavarman VII</h3>
+                <p class="text-sm text-gray-500 mb-2">Through February 15, 2026</p>
+              <p class="text-gray-700 text-wrap">
+                  This sandstone statue represents King Jayavarman VII, the most powerful and devout Buddhist ruler of the Khmer Empire. Seated in deep meditation, the sculpture reflects his dedication to Mahayana Buddhism and his vision of a compassionate, divine kingship.
+             </p>
+             </div>
+          </div>
+            <!-- card 5 -->
+            <div class="justify-center md:flex-row gap-6 mt-8 mx-8">
+            <!-- Image -->
+              <img src="/images/card16.jpg" alt="Apsara dancers" class="w-[320px]" />
+
+            <!-- Text -->
+             <div class="max-w-xl ">
+                <h3 class="font-bold text-lg mb-1">Ancient Khmer bronze vessel Musée Guimet's Paris, France</h3>
+              <p class="text-gray-700 text-wrap">
+                  This intricately cast bronze vessel from the Angkorian period (9th–13th century) was used in religious rituals, possibly for holding sacred water or offerings. Its fine detailing and balanced form reflect the Khmer people's deep spiritual beliefs and advanced metalworking techniques.
+             </p>
+             </div>
+          </div>
+          <h2 class="text-2xl font-medium mx-8 mt-5">Bas-Relief Art</h2>
+            <!-- card 6 -->
+            <div class="flex flex-col md:flex-row gap-6 items-start mt-8 mx-8">
+            <!-- Image -->
+              <img src="/images/card2.jpg" alt="Apsara dancers" class="w-[320px] mb-8" />
+            <!-- Text -->
+             <div class="max-w-xl ">
+                <h3 class="font-bold text-lg mb-1">Khmer Temple Bas-Relief</h3>
+                <p class="text-sm text-gray-500 mb-2">May 27-Ongoing</p>
+              <p class="text-gray-700 text-wrap">
+                  A form of sculpture where images are carved slightly from a flat surface, bas-relief brings stories to life through depth and detail. Common in Khmer temples, it was used to depict gods, legends, and daily life—turning stone walls into sacred narratives.
+             </p>
+             </div>
+          </div>
          </div>
   </main>
   <!-- footer -->
-   <footer class="bg-black text-white py-4">
+    <footer class="bg-black text-white py-4">
         <div class="max-w-screen-xl mx-auto px-2 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div class="mx-8">
-                <div class="text-3xl font-serif">
-                         <h1>THE</h1>
-                         <h1>ART</h1>
-                 </div>
+            <div class="mb-6 md:mb-0">
+                <img src="/images/Logo-black.png" alt="Logo" class="w-24 h-24 object-cover">
             </div>
             <div class="space-y-4">
                 <div>
-                    <p class="mb-2">Follow us on social media</p>
-                    <div class="flex justify-center md:justify-start space-x-4 text-xl">
+                    <p class="mb-2 text-xl">Follow us on social media</p>
+                    <div class="flex justify-center md:justify-start space-x-4 text-2xl">
                         <i class="fa-brands fa-youtube"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-facebook"></i>
                     </div>
                 </div>
-                <p class="mb-2">Reach out to us if you have any questions</p>
-                <div class="flex space-x-4 text-sm">
+                <p class="mb-2 text-xl">Reach out to us if you have any questions</p>
+                <div class="flex space-x-4 text-2xl">
                     <i class="fa-solid fa-message"></i>
                     <i class="fa-solid fa-phone"></i>
                 </div>
